@@ -50,14 +50,16 @@ h1 {
   animation-duration:var(--big-animation-duration);
   animation-iteration-count:infinite;
   animation-timing-function:ease-in-out;
+  animation-direction: alternate;
+  /* animation-fill-mode:both; */
 }
 
 /* ADD YOUR CODE HERE */
 @keyframes heading-slide {
   0%{transform:translatey(0);}
-  33%{transform:translatey(0.75rem);}
-  66%{translatey(-1.5rem);}
-  100%{translatey(0.75rem);}
+  33%{transform:translatey(0.5rem);}
+  66%{transform:translatey(-1rem);}
+  100%{transform:translatey(0);}
 }
 
 
